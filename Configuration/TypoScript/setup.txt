@@ -1,0 +1,27 @@
+plugin.tx_axkirchenplaner_termine {
+	view {
+
+		templateRootPath = EXT:ax_kirchenplaner/Resources/Private/Templates/
+		templateRootPaths.10 = EXT:ax_kirchenplaner/Resources/Private/Templates/
+
+		partialRootPath = EXT:ax_kirchenplaner/Resources/Private/Partials/
+		partialRootPaths.10 = EXT:ax_kirchenplaner/Resources/Private/Partials/
+
+		layoutRootPath = EXT:ax_kirchenplaner/Resources/Private/Layouts/
+		layoutRootPaths.10 = EXT:ax_kirchenplaner/Resources/Private/Layouts/
+	}
+	persistence {
+		storagePid =
+	}
+}
+config{
+	sendCacheHeaders = 1
+	enableContentLengthHeader = 1
+	additionalHeaders = Cache-Control: no-cache | Connection: keep-alive
+	moveJsFromHeaderToFooter = 1
+	htmlTag_setParams = ng-app="kirchenPlanerApp"
+	no_cache = 1
+}
+
+#page < temp.mask.page
+#page.bodyTagAdd = ng-app="kirchenPlanerApp"

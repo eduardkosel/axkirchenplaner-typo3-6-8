@@ -1,0 +1,36 @@
+{
+    "name": "cmft/ax_kirchenplaner",
+    "type": "typo3-cms-extension",
+    "description": "Kirchenplaner integration for TYPO3 6 to 8",
+    "keywords": [
+        "TYPO3",
+        "extension"
+    ],
+    "homepage": "http://wappler.systems",
+    "authors": [
+        {
+            "homepage": "http://wappler.systems",
+            "name": "WapplerSystems"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "php": ">=5.3.7",
+        "typo3/cms-core": ">=6.0.0 <9.0.0"
+    },
+    "suggest": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Axist\\AxKirchenplaner\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "extension-key": "ax_kirchenplaner"
+        }
+    }
+}
